@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, ScrollView } from 'react-native';
 
 export default class appReact extends Component {
   render() {
@@ -36,6 +36,7 @@ export default class appReact extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    //flexDirection:'row',
   },
   first:{
     flex:1,
