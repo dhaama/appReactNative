@@ -5,27 +5,29 @@
  */
 
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
 export default class appReact extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <View style={[styles.first, styles.common]}>
+          <Text >
+            First
+          </Text>
+        </View>
+        <View style={[styles.second, styles.common]}>
+          <Text style={styles.welcome}>
+            Second Section
+          </Text>
+        </View>
+          <View style={[styles.third, styles.common]}>
+          <Text>
+            Third{'\n'}
+            Press Cmd+R to reload,{'\n'}
+            Cmd+D or shake for dev menu
+          </Text>
+        </View>
       </View>
     );
   }
@@ -34,12 +36,25 @@ export default class appReact extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  first:{
+    flex:1,
+    backgroundColor: '#00e',
+  },
+  second:{
+    flex:8,
+    backgroundColor: '#FFF',
+  },
+  third:{
+    flex:1,
+    backgroundColor: '#00e',
+  },
+  common:{
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 30,
     textAlign: 'center',
     margin: 10,
   },
