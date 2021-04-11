@@ -29,4 +29,3 @@ react-native start
 在重新抖动模拟器，你会看到cmd React Packager里面Transforming modules的进度条，等到它完成。
 
 你就会看到成功啦：Welcome to React Native！是你，就是你，你你你。。。你你你你你现在你正式成为了RN的开发者了，一点都不差。就是这样！
-
