@@ -5,7 +5,11 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, ScrollView, ListView } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, ScrollView, ListView, Navigator } from 'react-native';
+
+import MyScene from './view/MyScene'
+
+
 
 export default class appReact extends Component {
 
@@ -51,24 +55,49 @@ export default class appReact extends Component {
 
     return (
       <View style={styles.container}>
-        <View style={[styles.first, styles.common]}>
-          <Text >
-            First
-          </Text>
-        </View>
+        
+
+        <Navigator
+          style={styles.nav}
+          initialRoute={{ title: 'My Initial Scene', index: 0 }}
+          renderScene={(route, navigator) =>
+            <MyScene
+              title={route.title}
+
+              // Function to call when a new scene should be displayed
+              onForward={() => {    
+                const nextIndex = route.index + 1;
+                navigator.push({
+                  title: 'Scene ' + nextIndex,
+                  index: nextIndex,
+                });
+              }}
+
+              // Function to call to go back to the previous scene
+              onBack={() => {
+                if (route.index > 0) {
+                  navigator.pop();
+                }
+              }}
+            />
+          }
+        />
+          
         <View style={[styles.second, styles.common]}>
           <ListView 
             dataSource={this.state.data}
             renderRow={(item) => <Text>{item.title}+++{item.releaseYear}</Text>}
           />
         </View>
-          <View style={[styles.third, styles.common]}>
+
+        <View style={[styles.third, styles.common]}>
           <Text>
             Third{'\n'}
             Press Cmd+R to reload,{'\n'}
             Cmd+D or shake for dev menu
           </Text>
         </View>
+
       </View>
     );
   }
@@ -79,12 +108,16 @@ const styles = StyleSheet.create({
     flex: 1,
     //flexDirection:'row',
   },
+  nav:{
+    marginTop:5,
+  },
   first:{
-    flex:1,
+    flex:2,
     backgroundColor: '#ccc',
+    paddingTop:20,
   },
   second:{
-    flex:8,
+    flex:1,
     backgroundColor: '#FFF',
   },
   third:{
@@ -92,7 +125,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
   },
   common:{
-    justifyContent: 'center',
+    //justifyContent: 'center',
     alignItems: 'center',
   },
   welcome: {
