@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, ScrollView, ListView, Navigator } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, ScrollView, ListView, Navigator, ActivityIndicator, } from 'react-native';
 
 import MyScene from './view/MyScene'
 
@@ -20,9 +20,8 @@ export default class appReact extends Component {
 
 
     this.state = {
-      data: ds.cloneWithRows([
-        'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie', 'Devin'
-      ])
+      data: ds.cloneWithRows(['John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie', 'Devin']),
+      loading: true,
     };
   }
 
@@ -38,7 +37,8 @@ export default class appReact extends Component {
             const data = responseJson.movies;
             console.log(data)
             this.setState({
-              data: this.state.data.cloneWithRows(data)
+              data: this.state.data.cloneWithRows(data),
+              loading: false,
             });
           })
           .catch((error) => {
@@ -83,11 +83,14 @@ export default class appReact extends Component {
           }
         />
           
+        
+
         <View style={[styles.second, styles.common]}>
-          <ListView 
-            dataSource={this.state.data}
-            renderRow={(item) => <Text>{item.title}+++{item.releaseYear}</Text>}
-          />
+          <ActivityIndicator size="large" style={styles.common} color="#f00" animating={this.state.loading}/>
+            <ListView 
+              dataSource={this.state.data}
+              renderRow={(item) => <Text>{item.title}+++{item.releaseYear}</Text>}
+            />
         </View>
 
         <View style={[styles.third, styles.common]}>
@@ -125,7 +128,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
   },
   common:{
-    //justifyContent: 'center',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   welcome: {
