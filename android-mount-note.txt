@@ -1,32 +1,32 @@
-app-react-native-android»·¾³´î½¨¾ÍÊÇÒ»¸ö´ó¿Ó¡£
+app-react-native-androidçŽ¯å¢ƒæ­å»ºå°±æ˜¯ä¸€ä¸ªå¤§å‘ã€‚
 
 react-native init appXiao   
-³õÊ¼»¯ÏîÄ¿£¬ÆäÊµ¾ÍÊÇÏÂÔØÎÄ¼þÀ²£¬Ã»Ê²Ã´¿ÉËµµÄ¡£ß×£¬ºÃÏñÊÇÓÃyarn°²×°£¬facebookÒ²ÊÇÈÎÈËÎ¨Ç×°¡¡£
+åˆå§‹åŒ–é¡¹ç›®ï¼Œå…¶å®žå°±æ˜¯ä¸‹è½½æ–‡ä»¶å•¦ï¼Œæ²¡ä»€ä¹ˆå¯è¯´çš„ã€‚å’¦ï¼Œå¥½åƒæ˜¯ç”¨yarnå®‰è£…ï¼Œfacebookä¹Ÿæ˜¯ä»»äººå”¯äº²å•Šã€‚
 
 cd appXiao
 
 react-native run-android   
-½øÈëÂþ³¤µÄÏÂÔØÏà¹ØÎÄ¼þ¼°±àÒëµÄ¹ý³Ì£¬´ó¶¼ÊýÊ±ºòÏÂÔØ»áÒ»Ö±±»Ç½...........Fuck GFW£¡£¡£¡µ«ÊÇ£¬¿´ÔËÆø°É£¬ÍòÒ»ÄãÑ¾ÔËÆøºÃµÄÁîÈË·¢Ö¸ÄØ¡£ÌØÃ´Ë­ÖªµÀÄØ£¡
+è¿›å…¥æ¼«é•¿çš„ä¸‹è½½ç›¸å…³æ–‡ä»¶åŠç¼–è¯‘çš„è¿‡ç¨‹ï¼Œå¤§éƒ½æ•°æ—¶å€™ä¸‹è½½ä¼šä¸€ç›´è¢«å¢™...........Fuck GFWï¼ï¼ï¼ä½†æ˜¯ï¼Œçœ‹è¿æ°”å§ï¼Œä¸‡ä¸€ä½ ä¸«è¿æ°”å¥½çš„ä»¤äººå‘æŒ‡å‘¢ã€‚ç‰¹ä¹ˆè°çŸ¥é“å‘¢ï¼
 
 BUILD FAILED
 * What went wrong:
 A problem occurred evaluating project ':app'.
 > SDK location not found. Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable.
-ÔõÃ´½â¾öÕâ¸öÎÊÌâÄØ£¿
-ÔÚandroidÄ¿Â¼µÄ¸ùÄ¿Â¼ÐÂ½¨ÎÄ¼þ£ºlocal.properties£¬ÄÚÈÝÊÇ£ºsdk.dir=C\:\\Users\\xiao\\AppData\\Local\\Android\\Sdk  
-ºÃÁË£¬¿ÉÒÔÁË£¬ÔÙÀ´react-native run-android£¬Äã»á¿´µ½Ò»³¤´®µÄÓ¢ÎÄappÉ¶µÄ£¬·´ÕýÎÒÒ²Ã»×ÐÏ¸¿´¶®¡£
+æ€Žä¹ˆè§£å†³è¿™ä¸ªé—®é¢˜å‘¢ï¼Ÿ
+åœ¨androidç›®å½•çš„æ ¹ç›®å½•æ–°å»ºæ–‡ä»¶ï¼šlocal.propertiesï¼Œå†…å®¹æ˜¯ï¼šsdk.dir=C\:\\Users\\xiao\\AppData\\Local\\Android\\Sdk  
+å¥½äº†ï¼Œå¯ä»¥äº†ï¼Œå†æ¥react-native run-androidï¼Œä½ ä¼šçœ‹åˆ°ä¸€é•¿ä¸²çš„è‹±æ–‡appå•¥çš„ï¼Œåæ­£æˆ‘ä¹Ÿæ²¡ä»”ç»†çœ‹æ‡‚ã€‚
 
 BUILD SUCCESSFUL
-¿¿£¬¸ã¶¨À²°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡£¬¸Ï¿ì±¼×ßÏà¸æÎ¿ÎÒÃÇÎªÁË´î½¨»·¾³¶øÊÅÈ¥µÄÇà´ººÍÔ¶È¥ÃÃÖ½°¡°¡°¡°¡°¡°¡°¡°¡°¡¡£¡£¡£¡£¡£Å¶£¬sorry£¬ËüÃÇ¶¼ÒÑ¾­×ßÔ¶ÁË£¬ÔÙÒ²²»»á»ØÀ´ÁË¡£
+é ï¼Œæžå®šå•¦å•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šï¼Œèµ¶å¿«å¥”èµ°ç›¸å‘Šæ…°æˆ‘ä»¬ä¸ºäº†æ­å»ºçŽ¯å¢ƒè€Œé€åŽ»çš„é’æ˜¥å’Œè¿œåŽ»å¦¹çº¸å•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šã€‚ã€‚ã€‚ã€‚ã€‚å“¦ï¼Œsorryï¼Œå®ƒä»¬éƒ½å·²ç»èµ°è¿œäº†ï¼Œå†ä¹Ÿä¸ä¼šå›žæ¥äº†ã€‚
 
-ÊÕÊ°ºÃÐÄËáºó£¬ÔÚÄ£ÄâÆ÷ÖÐ£¬ÄãÐÄÇéÆ®ÑïµÄÇáÇáµãÁËappXiao£¬Ã¼Óî¼äÒ»Æ¬²ÔÃ£¡¢ÐØÖÐºìÑªÈç³±¡¢Á½ÑÛ·Å¹âÃ¢ËÄÉä£¬¼ûÖ¤´íÎóµÄÊ±¿Ìµ½ÁË£¡ÓÚÊÇÄã¿´µ½ÁËºìµ×°××ÖµÄ´íÎóµ¯³ö¿ò£ºCould not get BatchedBridge, make sure your bundle is packaged correctly¡£Excuse me£¬what? ¶ºÎÒÍæ¶ù°É¡£
-ÔõÃ´°ì£¿
+æ”¶æ‹¾å¥½å¿ƒé…¸åŽï¼Œåœ¨æ¨¡æ‹Ÿå™¨ä¸­ï¼Œä½ å¿ƒæƒ…é£˜æ‰¬çš„è½»è½»ç‚¹äº†appXiaoï¼Œçœ‰å®‡é—´ä¸€ç‰‡è‹èŒ«ã€èƒ¸ä¸­çº¢è¡€å¦‚æ½®ã€ä¸¤çœ¼æ”¾å…‰èŠ’å››å°„ï¼Œè§è¯é”™è¯¯çš„æ—¶åˆ»åˆ°äº†ï¼äºŽæ˜¯ä½ çœ‹åˆ°äº†çº¢åº•ç™½å­—çš„é”™è¯¯å¼¹å‡ºæ¡†ï¼šCould not get BatchedBridge, make sure your bundle is packaged correctlyã€‚Excuse meï¼Œwhat? é€—æˆ‘çŽ©å„¿å§ã€‚
+æ€Žä¹ˆåŠžï¼Ÿ
 react-native start
-È»ºóÔÚ¼¤¶¯Ò»ÏÂ£¬Å¶²»£¬Ó¦¸ÃÊÇ¶¶¶¯Ò»ÏÂÄ£ÄâÆ÷£¬¼¤¶¯²»£¿µ«ÈÔÈ»ÊÇÒ»Æ¬ºìÉ«µÄ´íÎó¿ò£¬Ö»ÊÇÎÄ×Ö±ä³ÉÁË£ºCould not connect to development server¡£¡£¡£¡£¡£ÆäÊµ£¬¿´µ½Õâ¸öÎÒ¾ÍÉÔÎ¢·ÅÐÄÁËµã£¬¶øÇÒ¾ÓÈ»»¹ÓÐµã°Á½¿ÁË£¬development£¬¿ª·¢°¡£¬¶àÃ´¸ß´óÉÏµÄ¶«Î÷£¬ÄÇÃ´Ö»Òª¿ç¹ýÕâÆ¬ºìÉ«µ¯³ö¿ò£¬ÎÒ¾ÍÊÇreactnativeµÄ¿ª·¢ÕßÁË°¡£¬¹âÏëÏë¾ÍÒÑ¾­ºÜ¼¤¶¯ÁË£¬Õâ¾ÍÊÇÎÒµÄÃÎÏë°¡£¬°¡£¬ÖÕÓÚ²îµãÒªÊµÏÖÁË¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£(ÕâÀïÊ¡È¥ºÜ¶àµã)
+ç„¶åŽåœ¨æ¿€åŠ¨ä¸€ä¸‹ï¼Œå“¦ä¸ï¼Œåº”è¯¥æ˜¯æŠ–åŠ¨ä¸€ä¸‹æ¨¡æ‹Ÿå™¨ï¼Œæ¿€åŠ¨ä¸ï¼Ÿä½†ä»ç„¶æ˜¯ä¸€ç‰‡çº¢è‰²çš„é”™è¯¯æ¡†ï¼Œåªæ˜¯æ–‡å­—å˜æˆäº†ï¼šCould not connect to development serverã€‚ã€‚ã€‚ã€‚ã€‚å…¶å®žï¼Œçœ‹åˆ°è¿™ä¸ªæˆ‘å°±ç¨å¾®æ”¾å¿ƒäº†ç‚¹ï¼Œè€Œä¸”å±…ç„¶è¿˜æœ‰ç‚¹å‚²å¨‡äº†ï¼Œdevelopmentï¼Œå¼€å‘å•Šï¼Œå¤šä¹ˆé«˜å¤§ä¸Šçš„ä¸œè¥¿ï¼Œé‚£ä¹ˆåªè¦è·¨è¿‡è¿™ç‰‡çº¢è‰²å¼¹å‡ºæ¡†ï¼Œæˆ‘å°±æ˜¯reactnativeçš„å¼€å‘è€…äº†å•Šï¼Œå…‰æƒ³æƒ³å°±å·²ç»å¾ˆæ¿€åŠ¨äº†ï¼Œè¿™å°±æ˜¯æˆ‘çš„æ¢¦æƒ³å•Šï¼Œå•Šï¼Œç»ˆäºŽå·®ç‚¹è¦å®žçŽ°äº†ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚(è¿™é‡ŒçœåŽ»å¾ˆå¤šç‚¹)
 
-ÔõÃ´°ì£¿
-ÖØÐÂ¶¶¶¯Ä£ÄâÆ÷¡ª¡ªDev Settings¡ª¡ªDebug server host & port for device¡ª¡ªÌîÈë±¾»úip:8081¡ª¡ªÈ·¶¨
-ÔÚÖØÐÂ¶¶¶¯Ä£ÄâÆ÷£¬Äã»á¿´µ½cmd React PackagerÀïÃæTransforming modulesµÄ½ø¶ÈÌõ£¬µÈµ½ËüÍê³É¡£
+æ€Žä¹ˆåŠžï¼Ÿ
+é‡æ–°æŠ–åŠ¨æ¨¡æ‹Ÿå™¨â€”â€”Dev Settingsâ€”â€”Debug server host & port for deviceâ€”â€”å¡«å…¥æœ¬æœºip:8081â€”â€”ç¡®å®š
+åœ¨é‡æ–°æŠ–åŠ¨æ¨¡æ‹Ÿå™¨ï¼Œä½ ä¼šçœ‹åˆ°cmd React Packageré‡Œé¢Transforming modulesçš„è¿›åº¦æ¡ï¼Œç­‰åˆ°å®ƒå®Œæˆã€‚
 
-Äã¾Í»á¿´µ½³É¹¦À²£ºWelcome to React Native£¡ÊÇÄã£¬¾ÍÊÇÄã£¬ÄãÄãÄã¡£¡£¡£ÄãÄãÄãÄãÄãÏÖÔÚÄãÕýÊ½³ÉÎªÁËRNµÄ¿ª·¢ÕßÁË£¬Ò»µã¶¼²»²î¡£¾ÍÊÇÕâÑù£¡
+ä½ å°±ä¼šçœ‹åˆ°æˆåŠŸå•¦ï¼šWelcome to React Nativeï¼æ˜¯ä½ ï¼Œå°±æ˜¯ä½ ï¼Œä½ ä½ ä½ ã€‚ã€‚ã€‚ä½ ä½ ä½ ä½ ä½ çŽ°åœ¨ä½ æ­£å¼æˆä¸ºäº†RNçš„å¼€å‘è€…äº†ï¼Œä¸€ç‚¹éƒ½ä¸å·®ã€‚å°±æ˜¯è¿™æ ·ï¼
 
