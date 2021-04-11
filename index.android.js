@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, ScrollView, ListView, Navigator, ActivityIndicator, } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, ScrollView, ListView, Navigator, ActivityIndicator, Button, Alert, } from 'react-native';
 
 import MyScene from './view/MyScene'
 
@@ -44,6 +44,21 @@ export default class appReact extends Component {
           .catch((error) => {
             console.error(error);
           });
+  }
+
+  onButtonPress = () => {
+    Alert.alert(
+      '你点击了按钮',
+      '这是看的信息',
+      [
+        {text: 'OK', onPress: () => console.log('OK Pressed!')},
+        {text: 'Middle', onPress: () => console.log('Middle Pressed!')},
+        {text: 'No', onPress: () => console.log('No Pressed!')},
+      ],
+      {
+        cancelable: false
+      }
+      )
   }
 
 
@@ -86,12 +101,14 @@ export default class appReact extends Component {
         
 
         <View style={[styles.second, styles.common]}>
-          <ActivityIndicator size="large" style={styles.common} color="#f00" animating={this.state.loading}/>
+          <ActivityIndicator size="large" style={styles.common} color="#00f" animating={this.state.loading}/>
             <ListView 
               dataSource={this.state.data}
               renderRow={(item) => <Text>{item.title}+++{item.releaseYear}</Text>}
             />
         </View>
+
+        <Button title="按  钮" disabled={false} onPress={this.onButtonPress}/>
 
         <View style={[styles.third, styles.common]}>
           <Text>
