@@ -20,9 +20,12 @@ export default class appReact extends Component {
         'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie', 'Devin'
       ])
     };
+  }
 
+  componentDidMount(){
     this.getMovieData();
   }
+
 
   getMovieData(){
     fetch('https://facebook.github.io/react-native/movies.json')
