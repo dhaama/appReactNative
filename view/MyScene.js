@@ -17,14 +17,14 @@ export default class MyScene extends Component {
 	render(){
 		return(
 			<View>
-				<Text>你好，{this.props.title}</Text>
+				<Text style={[styles.text,{backgroundColor:"#6b6"}]}>你好，{this.props.title}</Text>
 
-				<TouchableHighlight onPress={this.props.onForward}>
-					<Text>去下一个场景</Text>
+				<TouchableHighlight style={styles.touch} onPress={this.props.onForward}>
+					<Text style={styles.text}>去下一个场景</Text>
 				</TouchableHighlight>
 
-				<TouchableHighlight onPress={this.props.onBack}>
-					<Text>返回上一个场景</Text>
+				<TouchableHighlight style={[styles.touch,{backgroundColor:"#2b2"}]} onPress={this.props.onBack}>
+					<Text style={styles.text}>返回上一个场景</Text>
 				</TouchableHighlight>
 
 			</View>
@@ -35,6 +35,14 @@ export default class MyScene extends Component {
 
 const styles = StyleSheet.create({
 	touch:{
-		
+		height:42,
+		backgroundColor:'green',
+	},
+	text:{
+		textAlign:'center',
+		color:'#fff',
+		lineHeight:42,
 	}
 })
+
+
