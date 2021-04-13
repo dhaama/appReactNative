@@ -71,44 +71,41 @@ export default class appReact extends Component {
     return (
       <View style={styles.container}>
         
+        <View style={styles.first}>
+          <Navigator
+            style={styles.nav}
+            initialRoute={{ title: 'My Initial Scene', index: 0 }}
+            renderScene={(route, navigator) =>
+              <MyScene
+                title={route.title}
 
-        <Navigator
-          style={styles.nav}
-          initialRoute={{ title: 'My Initial Scene', index: 0 }}
-          renderScene={(route, navigator) =>
-            <MyScene
-              title={route.title}
+                // Function to call when a new scene should be displayed
+                onForward={() => {    
+                  const nextIndex = route.index + 1;
+                  navigator.push({
+                    title: 'Scene ' + nextIndex,
+                    index: nextIndex,
+                  });
+                }}
 
-              // Function to call when a new scene should be displayed
-              onForward={() => {    
-                const nextIndex = route.index + 1;
-                navigator.push({
-                  title: 'Scene ' + nextIndex,
-                  index: nextIndex,
-                });
-              }}
-
-              // Function to call to go back to the previous scene
-              onBack={() => {
-                if (route.index > 0) {
-                  navigator.pop();
-                }
-              }}
-            />
-          }
-        />
-          
-        
-
-        <View style={[styles.second, styles.common]}>
-          <ActivityIndicator size="large" style={styles.common} color="#00f" animating={this.state.loading}/>
-            <ListView 
-              dataSource={this.state.data}
-              renderRow={(item) => <Text>{item.title}+++{item.releaseYear}</Text>}
-            />
+                // Function to call to go back to the previous scene
+                onBack={() => {
+                  if (route.index > 0) {
+                    navigator.pop();
+                  }
+                }}
+              />
+            }
+          />
         </View>
 
-        <Button title="按  钮" disabled={false} onPress={this.onButtonPress}/>
+        <View style={[styles.second, styles.common]}>
+          {this.state.loading ? <ActivityIndicator size="large" style={styles.common} color="#00f" animating={this.state.loading}/> : null}
+          <ListView 
+            dataSource={this.state.data}
+            renderRow={(item) => <Text>{item.title}+++{item.releaseYear}</Text>}
+          />
+        </View>
 
         <View style={[styles.third, styles.common]}>
           <Text>
@@ -117,6 +114,7 @@ export default class appReact extends Component {
             Cmd+D or shake for dev menu
           </Text>
         </View>
+        <Button title="按  钮" disabled={false} onPress={this.onButtonPress}/>
 
       </View>
     );
@@ -132,16 +130,16 @@ const styles = StyleSheet.create({
     marginTop:5,
   },
   first:{
-    flex:2,
+    flex:3,
     backgroundColor: '#ccc',
-    paddingTop:20,
+    paddingTop:5,
   },
   second:{
     flex:1,
     backgroundColor: '#FFF',
   },
   third:{
-    flex:1,
+    flex:3,
     backgroundColor: '#ccc',
   },
   common:{
